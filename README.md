@@ -1,5 +1,13 @@
 # Emscripten \_malloc/pointer/\_free test with Float32Array
 
+-----
+
+## Update:
+
+This issue [has been resolved](http://stackoverflow.com/a/41265774/519531).
+
+-----
+
 This test allocates a `Float32Array` of 32 bytes onto `Module.HEAPF32.buffer` and fills the array with float numbers where each number is its index multiplied by a value.
 
 Depending on the value, an error is thrown as `Module._abort()` is called.
